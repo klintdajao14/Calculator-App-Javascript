@@ -11,7 +11,7 @@ numberButtons.forEach(button => {
   });
 });
 
-document.getElementById('Add').addEventListener("click", function() {
+document.getElementById('Add').addEventListener("click", ()=> {
   if (currentNumber !== '') {
     if (previousNumber !== null && currentOperation !== null) {
       calculateResult();
@@ -24,7 +24,7 @@ document.getElementById('Add').addEventListener("click", function() {
   }
 });
 
-document.getElementById('Subtract').addEventListener("click", function() {
+document.getElementById('Subtract').addEventListener("click", () => {
   if (currentNumber !== '') {
     if (previousNumber !== null && currentOperation !== null) {
       calculateResult();
@@ -37,7 +37,7 @@ document.getElementById('Subtract').addEventListener("click", function() {
   }
 });
 
-document.getElementById('Divide').addEventListener("click", function() {
+document.getElementById('Divide').addEventListener("click", () =>{
   if (currentNumber !== '') {
     if (previousNumber !== null && currentOperation !== null) {
       calculateResult();
@@ -50,7 +50,7 @@ document.getElementById('Divide').addEventListener("click", function() {
   }
 });
 
-document.getElementById('Multiply').addEventListener("click", function() {
+document.getElementById('Multiply').addEventListener("click", ()=> {
   if (currentNumber !== '') {
     if (previousNumber !== null && currentOperation !== null) {
       calculateResult();
@@ -63,7 +63,7 @@ document.getElementById('Multiply').addEventListener("click", function() {
   }
 });
 
-document.getElementById('Modulo').addEventListener("click", function() {
+document.getElementById('Modulo').addEventListener("click", ()=> {
   if (currentNumber !== '') {
     if (previousNumber !== null && currentOperation !== null) {
       calculateResult();
@@ -76,7 +76,7 @@ document.getElementById('Modulo').addEventListener("click", function() {
   }
 });
 
-document.getElementById('Equals').addEventListener("click", function() {
+document.getElementById('Equals').addEventListener("click", ()=> {
   calculateResult();
 });
 

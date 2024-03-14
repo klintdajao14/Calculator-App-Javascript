@@ -4,13 +4,16 @@
   box-sizing: border-box;
   font-family: 'Poppins';
 }
-.container{
+.container {
   margin: 5vh auto;
   border: 5px solid black;
   height: 50%;
-  width: 30%;
+  width: 30%; /* Set initial width */
+  min-width: 200px; /* Minimum width to prevent excessive shrinking */
+  max-width: 90%; /* Maximum width to prevent excessive expansion */
   border-radius: 10px;
 }
+
 .brand{
   margin-top: 20px;
   margin-left: 29px;
@@ -85,4 +88,24 @@ button{
 }
 .grid-item.number:hover {
   background-color: #1976D2; 
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 70%; /* Adjust width for medium screens */
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .container {
+    width: 50%; /* Adjust width for large screens */
+  }
+}
+@media screen and (min-width: 1441px) {
+  .container {
+    width: 40%; /* Adjust width for extra-large screens */
+  }
 }
