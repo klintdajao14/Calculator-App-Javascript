@@ -1,0 +1,88 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+.container{
+  margin: 5vh auto;
+  border: 5px solid black;
+  height: 50%;
+  width: 30%;
+  border-radius: 10px;
+}
+.brand{
+  margin-top: 20px;
+  margin-left: 29px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.screen{
+  height: 30px;
+  border: 2px solid black;
+  width: 90%;
+  height: 10%;
+  margin: 0 auto ;
+  padding: 5px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.screenInput{
+  text-align: right;
+  font-size: 2rem;
+  width: 50%;
+  margin: 3px;
+  height: 3rem;
+}
+.center-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 90%;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.grid-item{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.grid-item-long{
+  grid-row: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-item-wide{
+  grid-column: span 3;
+}
+button{
+  cursor: pointer;
+}
+#Addition, #Subtraction, #Multiply, #Divide , #Modulo{
+  background-color: #4CAF50;
+}
+#Equals{
+  background-color: #FFC107;
+}
+#AC{
+  background-color: #F44336;
+}
+#Del{
+  background-color: #9E9E9E;
+}
+.grid-item.number{
+  background-color: #2196F3;
+}
+.grid-item.number:hover {
+  background-color: #1976D2; 
+}
